@@ -1,20 +1,13 @@
 <script>
-// #ifdef APP-PLUS
-import AppUpdate from "@/common/AppUpdate.js";
-// #endif
+import AppOnLaunch from "@/common/AppLifeCycle/AppOnLaunch";
+import AppOnShow from "@/common/AppLifeCycle/AppOnShow";
+import AppOnHide from "@/common/AppLifeCycle/AppOnHide";
+import AppOnError from "@/common/AppLifeCycle/AppOnError";
 export default {
-  onLaunch: function() {
-    console.log("App Launch");
-    // #ifdef APP-PLUS
-    AppUpdate();
-    // #endif
-  },
-  onShow: function() {
-    console.log("App Show");
-  },
-  onHide: function() {
-    console.log("App Hide");
-  },
+  onLaunch: AppOnLaunch,
+  onShow: AppOnShow,
+  onHide: AppOnHide,
+  onError: AppOnError,
 };
 </script>
 
