@@ -1,5 +1,5 @@
 import Request from "./lib";
-import httpConfig from "../../config/httpConfig";
+import httpConfig from "@/config/httpConfig";
 
 // 设置 通用的 baseUrl 以及 header
 const config = {
